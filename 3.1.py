@@ -1,4 +1,4 @@
-def read(var):
+def file_read(var):
   if var == 1:
     with open ("example.txt") as example:
       content = example.read()
@@ -14,10 +14,10 @@ def read(var):
 a = int(input("Выбирете каким способом хотите открыть файл(цифра 1 - первый способ, цифра 2 - второй способ): "))
 
 if (a == 1):
-  print(read(1))
+  print(file_read(1))
 
 elif (a == 2):
-  print(read(2))
+  print(file_read(2))
 
 else:
   print("такого варианта не существует")
