@@ -1,11 +1,11 @@
 def file_read(var):
   try:
-    if var == 1:
+    if (var == 1):
       with open ("example.txt") as example:
         content = example.read()
         return content
 
-    elif var == 2:
+    elif (var == 2):
       result = ""
       with open ("example.txt") as example:
         for line in example:
@@ -24,4 +24,4 @@ elif (a == 2):
   print(file_read(2))
 
 else:
-  print("такого варианта не существует")
+  print("ошибка")
