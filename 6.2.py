@@ -5,7 +5,7 @@ class Vehicle:
     self.model = model
 
   def get_info(self):
-    print(f"Марка: {self.make}, Модель: {self.model}")
+    return(f"Марка: {self.make}, Модель: {self.model}")
 
 class Car(Vehicle):
 
@@ -14,7 +14,7 @@ class Car(Vehicle):
     self.fuel = fuel
   
   def get_info(self):
-    print(f"{super().get_info()} Топливо: {self.fuel}")
+    print(f"{super().get_info()}, Топливо: {self.fuel}")
 
 cacar = Car("Тойота", "марк-2", "АИ-92")
-print(cacar.get_info())
+cacar.get_info()
