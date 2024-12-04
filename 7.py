@@ -16,7 +16,7 @@ class Manager(Employee):
     self.department = department
 
   def manage_project(self):
-    return f"{super().get_info()}, отдел: {self.department}"
+    return f"отдел: {self.department}"
 
 
 class Technician(Employee):
@@ -56,5 +56,11 @@ a.add_employee("fsjdfkhsg", "21312")
 a.add_employee("sjjsfj", "12")
 a.add_employee("fjfsjfsj", "5")
 a.add_employee("iewqiriqri", "88")
+
+print(a.perform_maintenance())
+print(a.manage_project())
+print(b.manage_project())
+print(c.perform_maintenance())
+
 
 print(a.get_team_info())
